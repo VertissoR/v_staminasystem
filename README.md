@@ -15,7 +15,7 @@ This resource for FiveM allows you to modify how stamina in-game behaves.
 - Drain stamina when climbing
 
 # Preview
-
+https://streamable.com/mzc0vg
 
 # Known issues
 - None that i found currently, please message me if you find any
