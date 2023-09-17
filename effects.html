@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.1.1/css/pro.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>xd</title>
+</head>
+<style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        #img {
+            display: none;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Maintain aspect ratio and cover the entire viewport */
+            position: absolute;
+            opacity: 100%;
+            animation: taadaa 4s infinite;
+
+        }
+
+        @keyframes taadaa { 
+        0%, 100% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+    
+}
+</style>
+<body>
+   <!-- Add an image element with an ID -->
+   <img id="img" src="effect.png" alt="Your Image">
+    
+    <script>
+    window.addEventListener('message', (event) => {
+        if (event.data.action === 'start_effect') {
+            // Show the image smoothly
+            $('#img').fadeIn(300);
+        } else if (event.data.action === 'stop_effect') {
+            // Hide the image smoothly
+            $('#img').fadeOut(300);
+        }
+    });
+
+    </script>
+</body>
+</html>
