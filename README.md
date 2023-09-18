@@ -1,7 +1,7 @@
 # v_staminasystem
 This resource for FiveM allows you to modify how stamina in-game behaves.
 
-[V1.0.0] 
+[V1.0.1] 
 
 # features
 - Fully configurable
