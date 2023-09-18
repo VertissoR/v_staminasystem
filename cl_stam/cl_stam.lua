@@ -78,16 +78,16 @@ Citizen.CreateThread(function()
         end
         --[[screen effects]]--
         if V_Stam.TiredEffects then
-            if getstam <= V_Stam.TiredEffectsThreshold then 
+            if getstam <= V_Stam.TiredEffectsThreshold and not IsPedDeadOrDying(playerPed, true) then 
                 SendNUIMessage({
                     action = 'start_effect'
                 })
-            end
-            if getstam >= V_Stam.TiredEffectsThreshold and getstam <= V_Stam.TiredEffectsThreshold + 1 then 
+            elseif IsPedDeadOrDying(playerPed, true) then
                 SendNUIMessage({
                     action = 'stop_effect'
                 })
-            elseif IsPedDeadOrDying(playerPed, true) then -- if player dies with the effect, stop it.
+            end
+            if getstam >= V_Stam.TiredEffectsThreshold and getstam <= V_Stam.TiredEffectsThreshold + 1 then 
                 SendNUIMessage({
                     action = 'stop_effect'
                 })
