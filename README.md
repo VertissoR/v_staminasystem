@@ -1,7 +1,7 @@
 # v_staminasystem
 This resource for FiveM allows you to modify how stamina in-game behaves.
 
-[V1.0.1] 
+[V1.0.2] 
 
 # features
 - Fully configurable
@@ -13,6 +13,8 @@ This resource for FiveM allows you to modify how stamina in-game behaves.
 - Disable jumping when tired
 - Drain stamina when jumping
 - Drain stamina when climbing
+- Drain stamina when fighting + System related to being tired
+- Can't fight notification (Standalone/ESX/mythic support)
 
 # Preview
 https://streamable.com/mzc0vg
