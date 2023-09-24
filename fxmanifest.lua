@@ -4,7 +4,7 @@ game 'gta5'
 lua54 'yes'
 author 'VertissoR'
 description 'Stamina System'
-version '1.0.1'
+version '1.0.2'
 
 client_scripts {
 	'config.lua',
